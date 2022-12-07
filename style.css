@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+body{
+    background-color: #2a2c2f;
+}
+
 .page{
-    width: auto;
+    min-width: 320px;
+    max-width: 1280px;
     background-color: #2a2c2f;
     color: #ffffff;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0 auto;
 }
 
@@ -70,5 +77,235 @@
     .header{
         min-width: 1184px;
         margin-bottom: 56px;
+    }
+}
+
+.lead{
+    min-width: auto;
+}
+
+.lead__title{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+    margin: 0 auto;    
+}
+
+.lead__subtitle{
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin: 16px;
+    margin-bottom: 40px;
+}
+
+.lead__image-container{
+    position: relative;
+    min-width: 320px;
+    min-height: 200px;
+}
+
+.lead__image{
+    width: 100%;
+    height: 100%;
+}
+
+.lead__image-svg{
+    position: absolute;
+    width: 90%;
+    height: auto;
+    left: 13.5px;
+    top: 42px;
+}
+
+.lead__caption{
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-left: 16px;
+    margin-top: 8px;
+}
+
+@media screen and (min-width: 768px){
+    .lead__title{
+        font-size: 96px;
+        line-height: 100px;
+    }
+
+    .lead__subtitle{
+        font-size: 30px;
+        line-height: 36px;
+        margin: 0 64px;
+        margin-top: 32px;
+        margin-bottom: 56px;
+    }
+
+    .lead__image-svg{
+        left: 32px;
+        top: 100px;
+    }
+
+    .lead__caption{
+        margin-left: 24px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .lead__title{
+        margin: 0 152px;
+    }
+
+    .lead__subtitle{
+        margin-left: 192px;
+        margin-right: 192px;
+    }
+    
+    .lead__image-container{
+        min-width: 928px;
+        min-height: 580px;
+        margin: 0 48px;
+    }
+
+    .lead__caption{
+        margin-left: 48px;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .lead__title{
+        margin: 0 280px;
+    }
+
+    .lead__subtitle{
+        margin-left: 320px;
+        margin-right: 320px;
+        margin-bottom: 64px;
+    }
+    
+    .lead__image-container{
+        width: 984px;
+        height: 615px;
+        margin: 0 148px;
+        margin-top: 64px;
+    }
+    
+    .lead__caption{
+        margin-left: 148px;
+    }
+}
+
+.intro{
+    min-width: 288px;
+    margin: 0 16px;
+    margin-top: 64px;
+}
+
+.intro__title{
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 35px;
+}
+
+.intro__text{
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.intro__list{
+    list-style: none;
+    padding: 0;
+    margin-top: 34px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.intro__list-span{
+    font-weight: 700;
+}
+
+@media screen and (min-width: 768px){
+    .intro{
+        width: 720px;
+        margin: 0 24px;
+        margin-top: 88px;
+    }
+
+    .intro__title{
+        font-size: 54px;
+        line-height: 58px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .intro{
+        margin-left: 48px;
+        margin-top: 92px;
+        width: 690px;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .intro{
+        margin-left: 148px;
+    }
+}
+
+.photos{
+    margin: 0 16px;
+    margin-top: 64px;
+}
+
+.photos__item{
+    margin-bottom: 12px;
+}
+
+.photos__item:last-child{
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px){
+    .photos{
+        width: 720px;
+        margin: 0 auto;
+        margin-top: 88px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    
+    .photos__item{
+        width: 352px;
+        height: 264px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .photos{
+        width: 928px;
+        margin-top: 92px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 14px;
+    }
+
+    .photos__item{
+        width: 300px;
+        height: 225px;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .photos{
+        width: 1184px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 16px;
+    }
+
+    .photos__item{
+        width: 284px;
+        height: 231px;
     }
 }
