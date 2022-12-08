@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
+@keyframes hover{
+    from{
+        opacity: 0.3;
+    }
+    to {
+        opacity: 0.8;
+    }
+}
+
 body{
     background-color: #2a2c2f;
 }
@@ -466,7 +475,7 @@ body{
 }
 
 .cover:hover .cover__overlay{
-    opacity: 0.8;
+    animation: hover ease 1s normal forwards;
 }
 
 .cover__link{
