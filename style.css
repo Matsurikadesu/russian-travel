@@ -263,12 +263,19 @@ body{
 }
 
 .photos{
-    margin: 0 16px;
     margin-top: 64px;
 }
 
 .photos__item{
+    margin: 0 auto;
+    width: 288px;
+    height: 216px;
     margin-bottom: 12px;
+}
+
+.photos__img{
+    width: 100%;
+    height: 100%;
 }
 
 .photos__item:last-child{
@@ -288,7 +295,7 @@ body{
     .photos__item{
         width: 352px;
         height: 264px;
-        margin-bottom: 0;
+        margin: 0;
     }
 }
 
