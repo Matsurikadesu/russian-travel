@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
-@keyframes hover{
-    from{
-        opacity: 0.3;
-    }
-    to {
-        opacity: 0.8;
-    }
-}
-
 body{
     background-color: #2a2c2f;
 }
@@ -46,13 +37,27 @@ body{
     line-height: 20px;
 }
 
+.header__lang-link:hover{
+    opacity: 0.8;
+}
+
 .header__lang-link:first-child{
     margin-right: 18px;
 }
 
 .header__lang-link_active{
+    position: relative;
     text-decoration: none;
-    border-bottom: 2px white solid;
+}
+
+.header__lang-link_active::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -1px;
 }
 
 @media screen and (min-width: 768px){
@@ -126,6 +131,99 @@ body{
     height: auto;
     left: 13.5px;
     top: 42px;
+}
+
+@keyframes path_draw {
+    to {
+        stroke-dashoffset: 2780;
+    }
+}
+
+.lead__svg-way{
+    animation: path_draw 20s linear forwards;
+
+    fill: none;
+    stroke: white;
+    stroke-width: 2px;
+    stroke-dasharray: 1390;
+    stroke-dashoffset: 1390;
+}
+
+@keyframes visible-city {
+    to {
+        opacity: 1;
+    }
+}
+.lead__svg-city:nth-child(2), .lead__svg-waypoint:nth-child(14), .lead__svg-waypoint:nth-child(15){
+    animation: visible-city 0.5s linear forwards 0s;
+
+    opacity: 0;
+}
+
+.lead__svg-city:nth-child(3), .lead__svg-waypoint:nth-child(16), .lead__svg-waypoint:nth-child(17){
+    animation: visible-city 0.5s linear forwards 2s;
+
+    opacity: 0;
+}
+
+.lead__svg-city:nth-child(4), .lead__svg-waypoint:nth-child(18), .lead__svg-waypoint:nth-child(19){
+    animation: visible-city 0.5s linear forwards 4.5s;
+
+    opacity: 0;
+}
+
+.lead__svg-city:nth-child(5), .lead__svg-waypoint:nth-child(20), .lead__svg-waypoint:nth-child(21) {
+    animation: visible-city 0.5s linear forwards 5.5s;
+
+    opacity: 0;
+}
+
+.lead__svg-city:nth-child(6), .lead__svg-waypoint:nth-child(22), .lead__svg-waypoint:nth-child(23) {
+    animation: visible-city 0.5s linear forwards 7.4s;
+
+    opacity: 0;
+}
+
+.lead__svg-city:nth-child(7), .lead__svg-waypoint:nth-child(24), .lead__svg-waypoint:nth-child(25) {
+    animation: visible-city 0.5s linear forwards 8.7s;
+
+    opacity: 0;
+}
+
+.lead__svg-city:nth-child(8), .lead__svg-waypoint:nth-child(26), .lead__svg-waypoint:nth-child(27) {
+    animation: visible-city 0.5s linear forwards 12s;
+
+    opacity: 0;
+}
+
+.lead__svg-city:nth-child(9), .lead__svg-waypoint:nth-child(28), .lead__svg-waypoint:nth-child(29) {
+    animation: visible-city 0.5s linear forwards 13s;
+
+    opacity: 0;
+}
+
+.lead__svg-city:nth-child(10), .lead__svg-waypoint:nth-child(30), .lead__svg-waypoint:nth-child(31) {
+    animation: visible-city 0.5s linear forwards 14s;
+
+    opacity: 0;
+}
+
+.lead__svg-city:nth-child(11), .lead__svg-waypoint:nth-child(32), .lead__svg-waypoint:nth-child(33) {
+    animation: visible-city 0.5s linear forwards 16s;
+
+    opacity: 0;
+}
+
+.lead__svg-city:nth-child(12), .lead__svg-waypoint:nth-child(34), .lead__svg-waypoint:nth-child(35) {
+    animation: visible-city 0.5s linear forwards 18.7s;
+
+    opacity: 0;
+}
+
+.lead__svg-city:nth-child(13), .lead__svg-waypoint:nth-child(36), .lead__svg-waypoint:nth-child(37) {
+    animation: visible-city 0.5s linear forwards 20s;
+
+    opacity: 0;
 }
 
 .lead__caption{
@@ -479,14 +577,16 @@ body{
     width: 100%;
     height: 100%;
     background-color: #2a2c2f;
+    transition: opacity 0.8s;
     opacity: 0.3;
     left: 0;
     top: 0;
 }
 
 .cover:hover .cover__overlay{
-    animation: hover ease 1s normal forwards;
+    opacity: 0.8;
 }
+
 
 .cover__title{
     position: relative;
