@@ -1,20 +1,27 @@
-![Превью проекта](./images/preview.webp)
-### Путешествия по России
+# Russian Travel 
 
-Учебный проект от Яндекс. Задача проекта - познакомится с адаптивной версткой, укрепить знания HTML и CSS, реализовать некоторые svg анимации. 
+The purpose of the Russian Travel website is to encourage people to travel across Russia.
 
-Проект представляет собой одностраничный лендинг с фотографиями природы Российской Федерации, интересными фактами о некоторых заповедниках находящихся на её территории.
+## Functionality of the project
 
-Перейти на сайт можно по [ссылке](https://kanae367.github.io/russian-travel/)
+The website provides users with information about some of the beautiful nature reserves in Russia, photos of local nature.
 
-#### Технологии использованные при разработке
+![Preview](./images/preview.webp)
 
-- HTML
-- CSS
+You can visit website by clicking [this link](https://kanae367.github.io/russian-travel/)
+
+## The project was made using the following technologies:
+
+- HTML5
+- CSS3
+- JS
 - JQuery
+- Adaptive layout
+- Flex
+- Grid
 
-#### Установка проекта
+## How to start
 
-Чтобы запустить проект на своём компьютере, скопируйте репозиторий при помощи команды:
+Clone the repository using the following command: 
 
 `git clone https://github.com/kanae367/russian-travel.git`
