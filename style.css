@@ -23,11 +23,16 @@ body{
     height: 42px;
 }
 
+.header__logo img{
+    width: 100%;
+}
+
 .header__lang-link{
     color: inherit;
     font-size: 18px;
     line-height: 20px;
     text-decoration: none;
+    transition: all .3s;
 }
 
 .header__lang-link:hover{
@@ -46,9 +51,9 @@ body{
     content: "";
     background-color: #fff;
     position: absolute;
-    width: 100%;
     height: 1px;
     left: 0;
+    right: 0;
     bottom: -1px;
 }
 
@@ -71,7 +76,8 @@ body{
 
 @media screen and (min-width: 1024px){
     .header{
-        margin: 0 48px;
+        margin-left: 48px;
+        margin-right: 48px;
     }
 }
 
@@ -110,7 +116,6 @@ body{
 .lead__svg-container{
     position: absolute;
     display: flex;
-    justify-content: center;
     inset: 0;
 }
 
@@ -156,11 +161,13 @@ body{
 
 @media screen and (min-width: 1024px) {
     .lead__title{
-        margin: 0 152px;
+        margin-left: 152px;
+        margin-right: 152px;
     }
 
     .lead__subtitle{
-        margin: 0 192px;
+        margin-left: 192px;
+        margin-right: 192px;
     }
     
     .lead__image-container{
@@ -179,7 +186,8 @@ body{
     }
 
     .lead__subtitle{
-        margin: 0 320px;
+        margin-left: 320px;
+        margin-right: 320px;
         margin-bottom: 64px;
     }
     
@@ -211,7 +219,6 @@ body{
 
 .intro__list{
     list-style: none;
-    padding: 0;
     margin-top: 34px;
     font-size: 12px;
     line-height: 18px;
@@ -265,7 +272,7 @@ body{
     .photos{
         width: 720px;
         margin-top: 88px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 16px;
     }
     
@@ -278,7 +285,7 @@ body{
     .photos{
         width: 928px;
         margin-top: 92px;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         gap: 14px;
     }
 
@@ -290,7 +297,7 @@ body{
 @media screen and (min-width: 1280px){
     .photos{
         width: 1184px;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
         gap: 16px;
     }
 
@@ -337,6 +344,7 @@ body{
     line-height: 22px;
     color: #ffffff;
     text-decoration: none;
+    transition: all .4s;
 }
 
 .place__link::after {
@@ -448,7 +456,6 @@ body{
 
 .cover__link{
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: center;
     position: relative;
@@ -462,7 +469,6 @@ body{
 }
 
 .cover__overlay{
-    z-index: 3;
     position: absolute;
     inset: 0;
     background-color: #2a2c2f;
@@ -547,8 +553,6 @@ body{
 }
 
 .footer__list{
-    padding: 0;
-    margin: 0;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -556,6 +560,7 @@ body{
 }
 
 .footer__link{
+    transition: all .4s;
     text-decoration: none;
     color: #ffffff;
     font-size: 24px;
