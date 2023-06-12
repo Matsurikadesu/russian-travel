@@ -611,3 +611,7 @@ body{
         gap: 18px;
     }
 }
+
+.lead__svg-container svg{
+    width: 100%;
+}
